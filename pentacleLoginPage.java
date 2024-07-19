@@ -40,7 +40,7 @@ public class pentacleLoginPage {
 	   //Actions act = new Actions(driver);
        driver.findElement(By.xpath(" /html/body/div/div/section/div[1]/div/div[2]/div[3]/ul/li/a")).click();
        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-       // Locate the element using its class name and tag name
+       
        WebElement employeeHeader = driver.findElement(By.cssSelector("h5.text-green.sub-menu-title.mb-2.rounded.p-2.text-green"));
        
        // Verify the text of the element
