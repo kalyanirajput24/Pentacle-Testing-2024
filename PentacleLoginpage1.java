@@ -70,8 +70,6 @@ public class PentacleLoginpage1 {
 
 		//click on submit button
 		driver.findElement(By.xpath("/html/body/div/div/div/main/div[2]/div/form/button")).click();
-
-		//verify if the login was successfully by checking the page title or a specific element 
 		String pageTitle = driver.getTitle();
 
 		Thread.sleep(1000);
@@ -105,7 +103,7 @@ public class PentacleLoginpage1 {
 
 	@Test(priority = 4)
 	public void EnterEmployeeName() {
-		// Log in to the application
+		
 		logIn();
 
 		WebElement firstButton = driver.findElement(By.xpath("/html/body/div/div/section/div[1]/div/div[1]"));
@@ -125,12 +123,7 @@ public class PentacleLoginpage1 {
 		driver.findElement(By.name("firstName")).sendKeys("Manoj");
 		driver.findElement(By.name("lastName")).sendKeys("Patil");
 
-		// Assuming there is a button to initiate the search, click it
-		//driver.findElement(By.id("searchButton")).click();
-
-		// Validate that the employee "Manoj Patil" appears in the search results
-		//WebElement searchResult = driver.findElement(By.xpath("//div[contains(text(), 'Manoj Patil')]"));
-		//Assert.assertTrue(searchResult.isDisplayed(), "Employee 'Manoj Patil' not found in the search results.");
+		
 	}
 
 	public void logIn() {
